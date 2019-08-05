@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    
+    
+
+                <p>Click the button to add a new element to the array.</p>
+                <h1>cadastro</h1>
+            
+                <h4>Nome:</h4>
+                <input type="text" class="inputnome">
+                <br>
+                <h4>Profissão:</h4>
+                <input type="text" class="inputprofissao">
+                <br>
+                <button onclick="myFunction()">Enviar dados</button>
+                <br>
+            
+                <p id="app"></p>
+                <p id="prof"></p>
+        
+
+
+
+
+    <script>
+        var inputnome = document.querySelector('.inputnome');
+        var inputprofissao = document.querySelector('.inputprofissao');
+        var nome = ['William', ' joao', ' jair'];
+        var profissao =  ['professor', 'professor', 'professor'];
+        function myFunction() {
+            nome.push(inputnome.value);
+            profissao.push(inputprofissao.value);
+            document.getElementById("app").innerHTML = nome;
+            document.getElementById("prof").innerHTML = profissao;
+            
+        }
+    </script>
+
+</body>
+
+</html>
